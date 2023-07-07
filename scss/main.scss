@@ -14,12 +14,14 @@ body {
 }
 
 .container {
+	margin: 0 auto;
 	width: min(100%, 1400px);
 }
 
 .card {
 	width: min(80%, 300px);
-	padding: 1rem 1rem 2rem;
+	height: 480px;
+	padding: 1rem;
 	border-radius: 15px;
 	text-align: center;
 	background-color: hsl(0, 0%, 100%);
@@ -40,15 +42,15 @@ body {
 		border-radius: 10px;
 	}
 }
-
-.attribution {
+.footer {
 	position: absolute;
 	bottom: 0;
-	font-size: 11px;
-	text-align: center;
-	padding: 1rem 0;
-}
-
-.attribution a {
-	color: hsl(228, 45%, 44%);
+	&__attribution {
+		font-size: 11px;
+		text-align: center;
+		padding: 1rem 0;
+		a {
+			color: hsl(228, 45%, 44%);
+		}
+	}
 }
